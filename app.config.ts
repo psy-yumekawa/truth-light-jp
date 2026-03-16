@@ -1,19 +1,14 @@
 export default defineAppConfig({
   truthlight: {
     site: {
-      name: 'Truth Light | 薬物 ✕ ハームリダクション ✕ 回復',
-      description: 'この日本で薬物依存症で苦しむ人をゼロにするハームリダクション&回復支援サイト',
+      name: 'Truth Light | ハームリダクション＆リカバリー',
+      description: 'Truth Lightは「日本版Erowid」を目指し、薬物に対する正しい情報と回復の道を提供します。',
       ogImage: '/og-default.png'
     },
     theme: {
       customizable: true,
       color: 'slate',
-      radius: 0.5,
-      fontFamily: {
-        title: ['Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        sans: ['Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        mono: ['Source Han Code JP', '源ノ角ゴシック Code JP', 'Source Han Code', '源ノ角ゴシック Code', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New']
-        }
+      radius: 0.5
     },
     header: {
       title: 'Truth Light',
@@ -27,7 +22,7 @@ export default defineAppConfig({
       },
       logo: {
         white: './logo/Jesus_fish_03_ol_white.png',
-        black: './logo/Jesus_fish_02_ol_black.png',
+        black: './logo/Jesus_fish_03_ol_grey.png',
       },
       border: false,
 
@@ -51,8 +46,8 @@ export default defineAppConfig({
       socialLinks: {
         links: [{
           title: 'Truth Light JP',
-          icon: 'x-logo-white.png',
-          to: 'https://x.com/Jesus_or_Drugs',
+          icon: './icon/X/x-logo-black.png',
+          to: 'https://x.com/TruthLightJP',
           target: '_blank',
         }]
       }
@@ -79,9 +74,9 @@ export default defineAppConfig({
     footer: {
       credits: 'Copyright © 2025 Truth Light. All rights reserved.',
       links: [{
-        title: 'ヤク中クリスチャン',
-        icon: 'x-logo-white.png',
-        to: 'https://x.com/Jesus_or_Drugs',
+        title: 'Truth Light JP',
+        icon: './icon/X/x-logo-black.png',
+        to: 'https://x.com/TruthLightJP',
         target: '_blank',
       }],
     },

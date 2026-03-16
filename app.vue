@@ -8,7 +8,7 @@
   })
 </script>
 <template>
-  <div class="bg-slate-900 text-slate-300 custom-font-normal">
+  <div class="bg-[#EAEFEF] text-[#25343F] custom-font-normal">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

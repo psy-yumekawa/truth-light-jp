@@ -2,8 +2,9 @@
   <!-- Substancesページ用ヘッダー -->
   <header 
    v-if="variant === `substances`"
-   class="sticky top-0 z-50 border-b border-white/10 bg-slate-900/90 backdrop-blur">
+   class="top-0">
     <div class="relative mx-auto px-10 py-4 flex flex-row items-center justify-between">
+      <div class="md:hidden w-[34px] h-[34px]"><LayoutHeaderMobileNav /></div>
       <div><LayoutHeaderLogo :subtitle="subtitle" :variant="variant" /></div>
       <div><LayoutHeaderNav :variant="variant" /></div>
       <div class=""><LayoutHeaderSocialLink /></div>
@@ -18,13 +19,12 @@
   </header>
 
   <!-- その他ヘッダー -->
-  <header 
-   v-else
-   class="sticky top-0 z-50 border-b border-white/10 bg-slate-900/70 backdrop-blur">
+  <header v-else>
     <div class="relative mx-auto px-6 py-4 flex flex-row max-w-6xl items-center justify-between">
 
-      <div class="static"><LayoutHeaderLogo :subtitle="subtitle" /></div>
-      <div><LayoutHeaderNav :variant="variant" /></div>
+      <div class="md:hidden"><LayoutHeaderMobileNav /></div>
+      <div><LayoutHeaderLogo :subtitle="subtitle" /></div>
+      <div class="hidden md:inline"><LayoutHeaderNav :variant="variant" /></div>
       <div><LayoutHeaderSocialLink /></div>
       
     </div>
@@ -46,7 +46,7 @@ const toggle = () => (open.value = !open.value)
 const close = () => (open.value = false)
 
 const props = defineProps<{
-  variant?: "default" | "substances" | "legal",
+  variant?: "default" | "substances",
 }>()
 const variant = computed(() => props.variant ?? "default")
 
