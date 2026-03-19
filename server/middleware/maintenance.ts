@@ -2,7 +2,9 @@ export default defineEventHandler((event) => {
   const config = useRuntimeConfig(event)
   const enabled = String(config.public.maintenanceMode) === 'true'
 
-  if (!enabled) return
+  if (!enabled) {
+    return
+  }
 
   const path = getRequestURL(event).pathname
 
