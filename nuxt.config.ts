@@ -3,13 +3,9 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Truth Light',
       htmlAttrs: {
         lang: 'ja',
       },
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: 'icon/favicon.ico' },
-      ],
     },
   },
   compatibilityDate: '2025-07-15',
