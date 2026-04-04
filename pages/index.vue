@@ -7,7 +7,10 @@
         <p class="w-[60%] mx-auto text-lg md:text-xl text-[#25343F]/70 tracking-tight text-center text-balance leading-50">Truth Lightはあらゆる精神活性物質の作用・副作用・危険性<br>そして薬物依存症からの回復の方法まで正しい情報を提供します。</p>
       </div>
       <section class="">
-        <h2 class="mb-12 text-xl text-center">規制情報、ハームリダクション、薬物依存症からの回復についてAIに聞く</h2>
+        <div class="flex flex-col items-center mb-12 text-xl text-center">
+          <div class="mb-4"><img src="/yumekawa-ai/yumekawa-ai-01.png" alt="夢可愛AI チャットボットアイコン" class="w-40" /></div>
+          <h2>規制情報、ハームリダクション、薬物依存症からの回復について夢可愛AIに聞く</h2>
+        </div>
         <div class="flex gap-4 justify-center pb-10">
           <button
             v-for="t in tabs"

@@ -52,12 +52,12 @@ html, body, #__nuxt { height: 100%; }
   line-height: 1.75rem;
 }
 
-#__nuxtContent ul {
+#__nuxtContent article ul {
   margin-bottom: 1.75rem;
   line-height: 1.75rem;
 }
 
-#__nuxtContent ul li {
+#__nuxtContent article ul li {
   list-style: disc inside;
 }
 

@@ -12,7 +12,7 @@
         <h1 class="text-3xl text-white custom-font-bold leading-tight h-auto">{{ titleJa }}</h1>
         <p v-if="aliases.length">
           <span v-for="(a, i) in Object.entries(aliases)">
-            {{ a }}
+            {{ a[1] }}, 
           </span>
         </p>
 
